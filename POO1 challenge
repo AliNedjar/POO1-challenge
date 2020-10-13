@@ -1,0 +1,37 @@
+<?php
+//Car.php
+
+class Car
+{
+    /**
+     * @var integer
+     */
+    private $nbWheels;
+    /**
+     * @var integer
+     */
+    private $currentSpeed;
+    /**
+     * @var string
+     */
+    private $color;
+    /**
+     * @var integer
+     */
+    private $nbChairs;
+    /**
+     * @var string
+     */
+    private $energyType;
+    /**
+     * @var integer
+     */
+    private $nbEnergy;
+
+    public function __construct(string $color, int $nbChairs, string $energyType)
+    {
+        $this->color = $color;
+        $this->nbChairs = $nbChairs;
+        $this->energyType = $energyType;
+    }
+}
